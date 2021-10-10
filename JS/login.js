@@ -36,6 +36,7 @@ function paintgreeting(name){
     greeting.innerText = `Hello ${name}!`; // 'Hello ' + username; <-- + 연산을 사용하는것은 바람직하지 않다. 
     greeting.classList.remove(HIDDEN_CLASSNAME);
     logoutbtn.classList.remove(HIDDEN_CLASSNAME);
+    document.querySelector('.logged .logoutbtn').style.display = 'inline-block';
 }
 
 function reset(){
@@ -49,8 +50,8 @@ localStorage.setitem('키값', '요소값'); <- localstorage에 key와 value값�
 localStorage.getitem('키값'); <- localstorage에 저장된 value값을 호출
 localStorage.removeitem('키값'); <- localstorage에 저장된 key와 value값을 제거
 */
-logoutbtn.addEventListener('click',reset);
 
+document.querySelector('.logged .logoutbtn').style.display = 'none';
 
 const savedusername = localStorage.getItem(USERNAME_KEY);
 
@@ -63,4 +64,5 @@ if(savedusername === null){
 } else {
     // Show Greetings
     paintgreeting(savedusername);
+    logoutbtn.addEventListener('click',reset);
 }
