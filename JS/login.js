@@ -52,7 +52,7 @@ localStorage.removeitem('키값'); <- localstorage에 저장된 key와 value값�
 */
 
 document.querySelector('.logged .logoutbtn').style.display = 'none';
-logoutbtn.addEventListener('click',reset);s
+logoutbtn.addEventListener('click',reset);
 
 const savedusername = localStorage.getItem(USERNAME_KEY);
 
