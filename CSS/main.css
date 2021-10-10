@@ -147,7 +147,7 @@ body {
     border-radius: 10px;
     font-size: 30px;
 }
-.todocontainer input::placeholder{
+.todocontainer input::placeholder {
     color: black;
     text-align: center;
     opacity: .7;
@@ -162,7 +162,7 @@ body {
     justify-items: center;
 }
 
-#todo_list button{
+#todo_list button {
     width: 30px;
     height: 30px;
     margin: 5px;
@@ -208,7 +208,7 @@ body {
     margin: 15px;
 }
 
-.bgimage{
+.bgimage {
     position:absolute;
     top: 0;
     left: 0;
