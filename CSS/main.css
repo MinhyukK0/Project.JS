@@ -29,7 +29,6 @@ body {
     align-self: flex-end;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(2,1fr);
     justify-items: center;
     align-items: center;
 }
@@ -81,18 +80,19 @@ body {
     opacity: .7;
 }
 .logincontainer .logged {
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .logincontainer #greeting{
+    display: inline-block;
     margin: 10px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 900;
     text-align: center;
 }
 .logincontainer .logoutbtn {
+    display: inline-block;
     width: 30px;
     height: 30px;
     background-image: url('https://cdn.icon-icons.com/icons2/2518/PNG/512/logout_icon_151219.png');
