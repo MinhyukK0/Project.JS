@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--시간-->
+        <h2 class='clock'>00:00:00</h2>
+
+        <!--날씨-->
+        <div class="weather">
+            <div class="current">Current Weather : </div>
+        </div>
+
+        <!--로그인 폼-->
+        <div class="logincontainer">
+            <form class="loginform hidden">
+                <input class='hidden'required maxlength="15" type="text" placeholder="Please write your ID">
+                <input class='submit hidden' type="submit" value="Log In">
+            </form>
+            <!--로그인 문구-->
+            <div class="logged">
+                <h1 id='greeting' class='hidden'></h1>
+                <button class="logoutbtn hidden"></button>
+            </div>
+            <!--명언-->
+            <div class="quotes">
+                <div class='quote'></div>
+                <div class='author'></div>
+            </div>
+
+        </div>
+
+        <!--Todo Form-->
+        <div class="todocontainer">
+            <form action="" class="todo_form">
+                <input type="text" placeholder='Write down your schedule.'>
+            </form>
+            <!--Todo list-->
+            <ul id="todo_list"></ul>
+        </div>
+        
+        <!--연락처-->
+        <div class="address">
+            <div id='contact'>Contact Developer</div>
+            <div>
+                <a href="mailto: komhgogo@gmail.com"><img class="mail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png" alt="mail"></a>
+                <a href="https://github.com/MinhyukK0" ><img class="github" src="https://cdn-icons-png.flaticon.com/512/3488/3488425.png" alt="github"></a>
+                <a href="https://velog.io/@minhyuk_ko" ><img class="velog" src="https://pbs.twimg.com/profile_images/1228368893321736193/Ov0og7E8_400x400.jpg" alt="velog"></a>
+            </div>
+        
+        <!--배경화면 처리-->
+        <div class="bgimage"></div>
+
+        </div>
+
+        <!--배경화면 처리-->
+        <div class="bgimage"></div>
+    </div>
+    
+
+    <!--자바스크립트 파일은 기능별로 나눠서 저장해주는 것이 유지보수면에서 용이하다.-->
+    <script src="../JS/clock.js"></script>
+    <script src="../JS/login.js"></script>
+    <script src="../JS/quotes.js"></script>
+    <script src="../JS/image.js"></script>
+    <script src="../JS/todo.js"></script>
+    <script src="../JS/weather.js"></script>
+</body>
+
+</html>
