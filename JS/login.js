@@ -52,6 +52,7 @@ localStorage.removeitem('키값'); <- localstorage에 저장된 key와 value값�
 */
 
 document.querySelector('.logged .logoutbtn').style.display = 'none';
+logoutbtn.addEventListener('click',reset);s
 
 const savedusername = localStorage.getItem(USERNAME_KEY);
 
@@ -64,5 +65,4 @@ if(savedusername === null){
 } else {
     // Show Greetings
     paintgreeting(savedusername);
-    logoutbtn.addEventListener('click',reset);
 }
